@@ -1,3 +1,5 @@
-# purescript-pmock-example-extensible-effects
-PureScript pmock example.
-It uses a `Clean architecture` with Extensible Effects (`purescript-run`).
+# purescript-example-halogen-cleanarchitecture-extensible-effects
+PureScript Halogen example.
+
+
+It uses a `Clean Architecture` with `Extensible Effects (purescript-run)`.
