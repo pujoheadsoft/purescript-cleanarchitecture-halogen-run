@@ -34,17 +34,11 @@ logics = {
 }
 
 -- show, eq instance
-derive instance Generic Todo _
-instance Show Todo where
-  show = genericShow
-instance Eq Todo where
-  eq = genericEq
+derive newtype instance showTodo :: Show Todo
+derive newtype instance eqTodo :: Eq Todo
 
-derive instance Generic TodoTitle _
-instance Show TodoTitle where
-  show = genericShow
-instance Eq TodoTitle where
-  eq = genericEq
+derive newtype instance showTitle :: Show TodoTitle
+derive newtype instance eqTitle :: Eq TodoTitle
 
 derive instance Generic TodoStatus _
 instance Show TodoStatus where
